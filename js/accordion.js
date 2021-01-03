@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // docRoot.scrollTop = target.offsetTop - 100;
       });
 
-      el.addEventListener('touch', () => {
+      el.addEventListener('touchend', () => {
         let target = document.getElementById(el.dataset.target);
         let docRoot = document.getElementById('root');
 
