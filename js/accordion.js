@@ -1,4 +1,4 @@
-import bulmaCollapsible from '../node_modules/@creativebulma/bulma-collapsible/src/js/index.js';
+import bulmaCollapsible from './bulma-collapsible/index.js';
 
 const bulmaCollapsibleInstances = bulmaCollapsible.attach('.is-collapsible', {allowMultiple: 'true'});
 
