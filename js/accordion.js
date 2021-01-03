@@ -28,6 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
         // target.scrollIntoView({behavior: 'smooth'});
         // docRoot.scrollTop = target.offsetTop - 100;
       });
+
+      el.addEventListener('touch', () => {
+        let target = document.getElementById(el.dataset.target);
+        let docRoot = document.getElementById('root');
+
+        // console.log(window.navigator.appVersion);
+        docRoot.scrollTo({top: target.offsetTop - 100, behavior: 'smooth'})
+        // target.scrollIntoView({behavior: 'smooth'});
+        // docRoot.scrollTop = target.offsetTop - 100;
+      });
     });
   }
   
