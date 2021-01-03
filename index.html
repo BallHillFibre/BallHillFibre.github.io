@@ -4,26 +4,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Ball Hill Fibre</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <link rel="stylesheet" href="mystyle.css">
     </head>
     <body>
-        <nav class="navbar is-fixed-top">
-            <div class="container">
+        <nav class="navbar is-primary is-fixed-top">
+            <div class="container mt-0">
                 <div class="navbar-brand">
-                    <p class="navbar-item pb-4 is-size-4 has-text-weight-semibold">Ball Hill Fibre</p>
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <p class="navbar-item is-size-4 has-text-weight-semibold">Ball Hill Fibre</p>
+                    <a role="button" class="navbar-burger" data-target="menu" aria-label="menu" aria-expanded="false">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
-                      </a>
+                    </a>
                 </div>
-                <!-- <div class="navbar-menu is-flex is-justify-content-center"> -->
-                <div class="navbar-menu">
+
+                <div class="navbar-menu" id="menu">
                     <div class="navbar-start">
-                        <a class="navbar-item py-5" href="#About">About</a>
-                        <a class="navbar-item py-5" href="#Updates">Updates</a>
-                        <a class="navbar-item py-5" href="#FAQs">FAQs</a>
-                        <a class="navbar-item py-5" href="#UsefulLinks">Useful Links</a>
+                        <a class="navbar-item" href="#About">About</a>
+                        <a class="navbar-item" href="#Updates">Updates</a>
+                        <a class="navbar-item" href="#FAQs">FAQs</a>
+                        <a class="navbar-item" href="#UsefulLinks">Useful Links</a>
                     </div>
 
                     <div class="navbar-end"></div>
@@ -34,17 +34,12 @@
 
         <main>
             <div class="section">
-                <div class="container">
-                    <!-- <div class="container has-text-centered">
-                        <p class="title is-2">Ball Hill Fibre</p>
-                    </div> -->
-                    
-                    <div class="container mt-5 has-text-justified">
+                    <div class="container">
                         <p class="title is-4" id="About">About</p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rerum mollitia ab accusamus, velit porro voluptas necessitatibus. Dolorem in veniam laudantium repellendus dolor. Quasi possimus eaque provident. Rem, perferendis perspiciatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rerum mollitia ab accusamus, velit porro voluptas necessitatibus. Dolorem in veniam laudantium repellendus dolor. Quasi possimus eaque provident. Rem, perferendis perspiciatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rerum mollitia ab accusamus, velit porro voluptas necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rerum mollitia ab accusamus, velit porro voluptas necessitatibus. Dolorem in veniam laudantium repellendus dolor. Quasi possimus eaque provident. Rem, perferendis perspiciatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rerum mollitia ab accusamus, velit porro voluptas necessitatibus. Dolorem in veniam laudantium repellendus dolor. Quasi possimus eaque provident. Rem, perferendis perspiciatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rerum mollitia ab accusamus, velit porro voluptas necessitatibus.
                     </div>
                     
-                    <div class="container mt-5">
+                    <div class="container">
                         <p class="title is-4" id="Updates">Updates</p>
                         <div class="card">
                             <header class="card-header">
@@ -63,8 +58,75 @@
                         </div>
                     </div>
                     
-                </div>
+                    <div class="container">
+                        <p class="title is-4" id="FAQs">FAQs</p>
+                        
+                        <!-- EXAMPLE -->
+
+                        <div id="accordion_first">
+                            <article class="message is-primary">
+                                <div href="#collapsible-message-accordion-1" data-action="collapse" class="message-header accordion-trigger">
+                                    <p>Question 1</p>
+                                </div>
+                                <div id="collapsible-message-accordion-1" class="message-body is-collapsible" data-parent="accordion_first">
+                                    <div class="message-body-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
+                                        placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+                                        <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+                                        sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
+                                        sem eget, facilisis sodales sem.
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="message is-primary">
+                                <div href="#collapsible-message-accordion-2" data-action="collapse" class="message-header accordion-trigger">
+                                    <p>Question 2</p>
+                                </div>
+                                <div id="collapsible-message-accordion-2" class="message-body is-collapsible" data-parent="accordion_first">
+                                    <div class="message-body-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
+                                        placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+                                        <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+                                        sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
+                                        sem eget, facilisis sodales sem.
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="message is-primary">
+                                <div href="#collapsible-message-accordion-3" data-action="collapse" class="message-header accordion-trigger">
+                                    <p>Question 3</p>
+                                </div>
+                                <div id="collapsible-message-accordion-3" class="message-body is-collapsible" data-parent="accordion_first">
+                                    <div class="message-body-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
+                                        placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+                                        <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
+                                        sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
+                                        sem eget, facilisis sodales sem.
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="container">
+                        <p id="UsefulLinks" class="title is-4">Useful Links</p>
+
+                        <p><a href="www.google.com">www.google.com</a></p>
+                        <p><a href="www.google.com">www.googgle.com</a></p>
+                        <p><a href="www.google.com">www.poop.com</a></p>
+                    </div>
+                    
             </div>
         </main>
+
+        <script type="module" crossorigin="anonymous" src="./js/accordion.js"></script>
     </body>
+
+    <footer class="footer">
+        <div class="content has-text-centered"></div>
+      </footer>
 </html>

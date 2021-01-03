@@ -1,0 +1,59 @@
+$primary: lighten(#1A343C, 15%);
+
+@import "node_modules/bulma/bulma.sass";
+@import 'node_modules/@creativebulma/bulma-collapsible/src/sass/index.sass';
+
+.container {
+  margin-top: 2rem;
+}
+
+.navbar-menu {
+  @include touch {
+    background-color: $primary-invert;
+  }
+
+  .navbar-item {
+    transition: background-color 200ms ease;
+    transition: color 200ms ease;
+
+    @include touch {
+      padding: 0.75rem;
+    }
+
+    @include from($desktop) {
+      padding: 1.5rem;
+    }
+  
+    &:hover {
+      @include touch {
+        background-color: $primary-light !important;
+        transition: background-color 200ms ease;
+        color: $text !important;
+      }
+
+      @include from($desktop) {
+        color: lighten($primary, 50%) !important;
+        transition: color 200ms ease;
+        background-color: transparent !important;
+      }
+    }
+
+    &:focus {
+      @include touch {
+        background-color: $primary-light !important;
+        transition: background-color 200ms ease;
+        color: $text !important;
+      }
+
+      @include from($desktop) {
+        color: lighten($primary, 50%) !important;
+        transition: color 200ms ease;
+        background-color: transparent !important;
+      }
+    }
+  }
+}
+
+.accordion-trigger {
+  cursor: pointer;
+}
