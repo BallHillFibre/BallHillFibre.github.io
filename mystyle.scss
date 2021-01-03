@@ -4,7 +4,13 @@ $primary: lighten(#1A343C, 15%);
 @import 'node_modules/@creativebulma/bulma-collapsible/src/sass/index.sass';
 
 .container {
-  margin-top: 2rem;
+  margin-top: 1.75rem;
+}
+
+.navbar-brand {
+  @include touch {
+    margin: 0.5rem 0rem;
+  }
 }
 
 .navbar-menu {
@@ -13,8 +19,7 @@ $primary: lighten(#1A343C, 15%);
   }
 
   .navbar-item {
-    transition: background-color 200ms ease;
-    transition: color 200ms ease;
+    transition: background-color 200ms ease, color 200ms ease;
 
     @include touch {
       padding: 0.75rem;
@@ -27,13 +32,11 @@ $primary: lighten(#1A343C, 15%);
     &:hover {
       @include touch {
         background-color: $primary-light !important;
-        transition: background-color 200ms ease;
         color: $text !important;
       }
 
       @include from($desktop) {
         color: lighten($primary, 50%) !important;
-        transition: color 200ms ease;
         background-color: transparent !important;
       }
     }
@@ -41,13 +44,11 @@ $primary: lighten(#1A343C, 15%);
     &:focus {
       @include touch {
         background-color: $primary-light !important;
-        transition: background-color 200ms ease;
         color: $text !important;
       }
 
       @include from($desktop) {
         color: lighten($primary, 50%) !important;
-        transition: color 200ms ease;
         background-color: transparent !important;
       }
     }

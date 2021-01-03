@@ -12749,7 +12749,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .container {
-  margin-top: 2rem;
+  margin-top: 1.75rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar-brand {
+    margin: 0.5rem 0rem;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -12759,10 +12765,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .navbar-menu .navbar-item {
-  -webkit-transition: background-color 200ms ease;
-  transition: background-color 200ms ease;
-  -webkit-transition: color 200ms ease;
-  transition: color 200ms ease;
+  -webkit-transition: background-color 200ms ease, color 200ms ease;
+  transition: background-color 200ms ease, color 200ms ease;
 }
 
 @media screen and (max-width: 1023px) {
@@ -12780,8 +12784,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media screen and (max-width: 1023px) {
   .navbar-menu .navbar-item:hover {
     background-color: #f1f7f9 !important;
-    -webkit-transition: background-color 200ms ease;
-    transition: background-color 200ms ease;
     color: #4a4a4a !important;
   }
 }
@@ -12789,8 +12791,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media screen and (min-width: 1024px) {
   .navbar-menu .navbar-item:hover {
     color: #bedae3 !important;
-    -webkit-transition: color 200ms ease;
-    transition: color 200ms ease;
     background-color: transparent !important;
   }
 }
@@ -12798,8 +12798,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media screen and (max-width: 1023px) {
   .navbar-menu .navbar-item:focus {
     background-color: #f1f7f9 !important;
-    -webkit-transition: background-color 200ms ease;
-    transition: background-color 200ms ease;
     color: #4a4a4a !important;
   }
 }
@@ -12807,8 +12805,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @media screen and (min-width: 1024px) {
   .navbar-menu .navbar-item:focus {
     color: #bedae3 !important;
-    -webkit-transition: color 200ms ease;
-    transition: color 200ms ease;
     background-color: transparent !important;
   }
 }
