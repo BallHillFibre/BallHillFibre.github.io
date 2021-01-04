@@ -12752,6 +12752,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-top: 1.75rem;
 }
 
+.section {
+  padding-top: 2rem !important;
+  padding-bottom: 0rem !important;
+}
+
 @media screen and (max-width: 1023px) {
   .navbar-brand {
     margin: 0.5rem 0rem;

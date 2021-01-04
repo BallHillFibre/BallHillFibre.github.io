@@ -7,6 +7,11 @@ $primary: lighten(#1A343C, 15%);
   margin-top: 1.75rem;
 }
 
+.section {
+  padding-top: 2rem !important;
+  padding-bottom: 0rem !important;
+}
+
 .navbar-brand {
   @include touch {
     margin: 0.5rem 0rem;
