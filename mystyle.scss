@@ -1,7 +1,21 @@
 $primary: lighten(#1A343C, 15%);
+$link: #4c97ae;
+$link-hover: $primary;
 
 @import "node_modules/bulma/bulma.sass";
 @import 'node_modules/@creativebulma/bulma-collapsible/src/sass/index.sass';
+
+a {
+  transition: color 200ms ease;
+}
+
+.link-block {
+  line-height: 2rem;
+
+  a {
+    text-decoration: underline;
+  }
+}
 
 .container {
   margin-top: 1.75rem;
@@ -62,4 +76,10 @@ $primary: lighten(#1A343C, 15%);
 
 .accordion-trigger {
   cursor: pointer;
+}
+
+.quote {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  // padding: 0 1rem;
 }

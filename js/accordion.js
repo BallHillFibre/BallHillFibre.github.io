@@ -1,8 +1,10 @@
 import bulmaCollapsible from './bulma-collapsible/index.js';
 
-bulmaCollapsible.attach('.is-collapsible', {allowMultiple: 'true'});
+
 
 document.addEventListener('DOMContentLoaded', () => {
+  bulmaCollapsible.attach('.is-collapsible', {allowMultiple: 'true'});
+
   const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
   if (navbarBurgers.length > 0) {
     navbarBurgers.forEach( el => {
@@ -23,22 +25,26 @@ document.addEventListener('DOMContentLoaded', () => {
         let target = document.getElementById(el.dataset.target);
         let docRoot = document.getElementById('root');
 
-        // console.log(window.navigator.appVersion);
-        docRoot.scrollTo({top: target.offsetTop - 100, behavior: 'smooth'})
-        // target.scrollIntoView({behavior: 'smooth'});
-        // docRoot.scrollTop = target.offsetTop - 100;
+        //snap scroll because Safari
+        docRoot.scrollTo(0, target.offsetTop - 100);
+        // docRoot.scrollTo({top: target.offsetTop - 100, behavior: 'smooth'});
       });
 
       el.addEventListener('touchend', () => {
         let target = document.getElementById(el.dataset.target);
         let docRoot = document.getElementById('root');
 
-        // console.log(window.navigator.appVersion);
-        docRoot.scrollTo({top: target.offsetTop - 100, behavior: 'smooth'})
-        // target.scrollIntoView({behavior: 'smooth'});
-        // docRoot.scrollTop = target.offsetTop - 100;
+        //snap scroll because Safari
+        docRoot.scrollTo(0, target.offsetTop - 100);
+        // docRoot.scrollTo({top: target.offsetTop - 100, behavior: 'smooth'});
       });
     });
   }
   
+  // const body = document.getElementById("body");
+  // body.onresize = () => {
+  //   const activeCollapsible = Array.prototype.slice.call(document.querySelectorAll('.is-collapsible .is-active'), 0);
+  //   if ()
+  //   bulmaCollapsible.adjust();
+  // };
 });
