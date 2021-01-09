@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Ball Hill Fibre</title>
         <link rel="stylesheet" href="mystyle.css">
+        <script src="https://kit.fontawesome.com/080a2c38f8.js" crossorigin="anonymous"></script>
+        <script src="./js/accordion.js" crossorigin="anonymous" type="module"></script>
     </head>
     <body id="body">
         <nav class="navbar is-primary is-fixed-top">
@@ -36,9 +38,22 @@
             <div class="section">
                 <div id="About" class="container is-max-desktop">
                     <p class="title is-4">About</p>
-                    In September 2019, an enquiry was made to Openreach (OR) to see if it would be possible to obtain broadband over Fibre To The Premises (FTTP) on Woolton Hill Road in Ball Hill. When Openreach responded to this enquiry in December, they explained that due to the way their network is configured there are circa 100 properties that could receive FTTP on the network leg supplying the properties on the original enquiry.</br></br>
-                    OR have a scheme for community fibre projects (CFP) to install fibre in rural areas that are not already on the roll-out plan for new fibre networks. This scheme is supported by funding from central government via the Department for Culture, Media and Sport (DCMS) and in Hampshire by Hampshire County Council. The funding for residential properties, from the two schemes, amounts to £3,000 per property and for SMEs funding is only available from DCMS and amounts to £3,500.</br></br>
-                    The intention of this project is to engage with Openreach to install a new fibre network to cover circa 100 properties with the full cost of the installation to be covered by vouchers so there is no installation cost to residents / SME owners.
+                    In September 2019, an enquiry was made to Openreach (OR) to see if it would be possible to
+                    obtain broadband over <strong>F</strong>ibre <strong>T</strong>o <strong>T</strong>he <strong>P</strong>remises (FTTP) on Woolton Hill Road in Ball Hill.
+                    When Openreach responded to this enquiry in December, they explained that due to the way
+                    their network is configured, there are circa 100 properties that could receive FTTP on the
+                    network leg supplying the properties on the original enquiry. </br></br>
+                    OR have a scheme for community fibre projects (CFP) to install fibre in rural areas that are
+                    not already on the roll-out plan for new fibre networks. This scheme is supported by funding
+                    from central government via the Department for Culture, Media and Sport (DCMS) and in
+                    Hampshire by Hampshire County Council. The funding for residential properties, from the
+                    two schemes, amounts to £3,000 per property; for SMEs, funding is only available from
+                    DCMS and amounts to £3,500. </br></br>
+                    The intention of this project is to engage with Openreach to install a new fibre network to
+                    cover circa 100 properties with the full cost of the installation to be covered by vouchers so
+                    there is no installation cost to residents/SME owners. </br></br>
+                    Once the network is installed, each home owner/SME owner would contract with their
+                    preferred broadband service provider (ISP) to provide a service over the fibre network.
                 </div>
             </div>
                 
@@ -46,27 +61,30 @@
                 <div id="Updates" class="container is-max-desktop">
                     <p class="title is-4">Updates</p>
 
-                    <div class="has-text-centered has-text-grey">Nothing yet!</div>
-                    <!-- <div id="accordion-updates">
+                    <div id="accordion-updates">
                         <div class="card">
                             <header class="card-header accordion-trigger" href="#update1" data-action="collapse">
                                 <p class="card-header-title">
-                                    New Quote!
+                                    09/01/21 - Contact info
                                 </p>
 
                                 <p class="card-header-icon">
-                                    04/01/21
+                                    <span id="update1-icon" class="fas fa-angle-left is-active"></span>
                                 </p>
                             </header>
 
                             <div id="update1" class="is-collapsible is-active" data-parent="accordion-updates">
                                 <div class="card-content">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, aut! Dolores, alias, sequi pariatur corrupti deleniti, earum minus porro eos fuga in temporibus accusantium eius commodi quas modi aut atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quod, voluptate molestias quia omnis saepe suscipit, ad minus nisi quidem minima et facilis! Sapiente nulla rerum, assumenda officia est minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reprehenderit blanditiis sequi adipisci rerum repudiandae earum vel quis deleniti aperiam esse maxime dignissimos porro, eaque labore, doloremque provident qui nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, possimus ad inventore voluptatem tempore, accusantium omnis quia aut fuga incidunt at. Ea odit fugiat corporis laborum? Officiis nihil amet maiores.
+                                    We are still canvassing residents to determine the level of interest. A number of
+                                    people have said they are keen to pursue the scheme. In order to fund the scheme entirely
+                                    from government and local authority funded vouchers, we need a few more properties to take
+                                    part. If you would like to join us, please email <a href="mailto:fibreinballhill@btinternet.com">fibreinballhill@btinternet.com</a> and we will keep you informed of progress as the project develops. </br></br>
+                                    OR have asked for a final cost and we are awaiting a reply.
                                 </div>
                             </div>
                             
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
 
@@ -75,89 +93,114 @@
                     <p class="title is-4">FAQs</p>
 
                     <div id="accordion-faqs">
-                        <article class="message is-primary">
-                            <div href="#collapsible-message-accordion-1" data-action="collapse" class="message-header accordion-trigger">
-                                <p>Why do I need faster broadband?</p>
+                        <div class="card mb-5">
+                            <header class="card-header accordion-trigger" href="#faqs-1" data-action="collapse">
+                                <p class="card-header-title">What do I need to do to take part?</p>
+                                <p class="card-header-icon"><span id="faqs-1-icon" class="fas fa-angle-left"></span></p>
+                            </header>
+                            
+                            <div id="faqs-1" class="is-collapsible" data-parent="accordion-faqs">
+                                <div class="card-content">
+                                    In the first instance, email <a href="mailto:fibreinballhill@btinternet.com">fibreinballhill@btinternet.com</a> and then keep an eye out for updates on this website. If enough people are interested then we'll get in touch with OR to organise the vouchers and they will contact you to pledge the vouchers via a website. Then we wait for OR to install the fibre! Don't worry, we'll put plenty of information about this here when the time comes.
+                                </div>
                             </div>
-                            <div id="collapsible-message-accordion-1" class="message-body is-collapsible" data-parent="accordion-faqs">
-                                <div class="message-body-content">
+                        </div>
+
+                        <div class="card mb-5">
+                            <header class="card-header accordion-trigger" href="#faqs-2" data-action="collapse">
+                                <p class="card-header-title">Why do I need faster broadband?</p>
+                                <p class="card-header-icon"><span id="faqs-2-icon" class="fas fa-angle-left"></span></p>
+                            </header>
+                            
+                            <div id="faqs-2" class="is-collapsible" data-parent="accordion-faqs">
+                                <div class="card-content">
                                     Openreach say: “Gigabit-capable broadband connections offer the fastest and most reliable speeds available. It means that accessing online services, video calls, working from home, streaming HD TV and gaming online – all at the same time; with no frustrating buffering, no connection dropouts and no waiting.”</br></br>
                                     It is also possible that FTTP will increase the value of your home if you are thinking of selling.
                                 </div>
                             </div>
-                        </article>
+                        </div>
 
-                        <article class="message is-primary">
-                            <div href="#collapsible-message-accordion-2" data-action="collapse" class="message-header accordion-trigger">
-                                <p>What is FTTP?</p>
-                            </div>
-                            <div id="collapsible-message-accordion-2" class="message-body is-collapsible" data-parent="accordion-faqs">
-                                <div class="message-body-content">
-                                    FTTP (<strong>F</strong>ibre <strong>T</strong>o <strong>T</strong>he <strong>P</strong>remises) is a new technology that can replace your existing broadband connection infrastructure. The majority of properties receive broadband over the copper telephone line, either on copper all the way to the exchange or on copper to a local cabinet and from their over fibre to the exchange. FTTP replaces the copper connection to properties with a fibre connection all the way from the property to the exchange. As fibre doesn't degrade the speed over distance and isn't subject to the same kind of interference problems as copper you should see a faster and more reliable service.
+                        <div class="card mb-5">
+                            <header class="card-header accordion-trigger" href="#faqs-3" data-action="collapse">
+                                <p class="card-header-title">What is FTTP?</p>
+                                <p class="card-header-icon"><span id="faqs-3-icon" class="fas fa-angle-left"></span></p>
+                            </header>
+                            
+                            <div id="faqs-3" class="is-collapsible" data-parent="accordion-faqs">
+                                <div class="card-content">
+                                    FTTP (<strong>F</strong>ibre <strong>T</strong>o <strong>T</strong>he <strong>P</strong>remises) is a new technology that can replace your existing broadband connection infrastructure. The majority of properties receive broadband over the copper telephone line, either on copper all the way to the exchange or on copper to a local cabinet and from there, over fibre to the exchange. FTTP replaces the copper connection to properties with a fibre connection all the way from the property to the exchange. As fibre doesn't degrade the speed over distance and isn't subject to the same kind of interference problems as copper, you should see a faster and more reliable service.
                                 </div>
                             </div>
-                        </article>
+                        </div>
 
-                        <article class="message is-primary">
-                            <div href="#collapsible-message-accordion-3" data-action="collapse" class="message-header accordion-trigger">
-                                <p>What speed does FTTP run at?</p>
-                            </div>
-                            <div id="collapsible-message-accordion-3" class="message-body is-collapsible" data-parent="accordion-faqs">
-                                <div class="message-body-content">
+                        <div class="card mb-5">
+                            <header class="card-header accordion-trigger" href="#faqs-4" data-action="collapse">
+                                <p class="card-header-title">What speed does FTTP run at?</p>
+                                <p class="card-header-icon"><span id="faqs-4-icon" class="fas fa-angle-left"></span></p>
+                            </header>
+                            
+                            <div id="faqs-4" class="is-collapsible" data-parent="accordion-faqs">
+                                <div class="card-content">
                                     The Openreach proposal states “Openreach (OR) will deliver a fibre-to-the-premise (FTTP) infrastructure - which has the capability to give download speeds of up to 1 Gbps (1000 Mbps)”.</br></br>
-                                    The speed to each individual property will be dependent upon which ISP you decide to use and which package you sign up to, but typically an ISP will offer a range of speeds, at different prices, from 36Mbps to 900Mbps
+                                    The speed to each individual property will be dependent upon which ISP you decide to use and which package you sign up to, but typically an ISP will offer a range of speeds, at different prices, from 36Mbps to 900Mbps.
                                 </div>
                             </div>
-                        </article>
+                        </div>
 
-                        <article class="message is-primary">
-                            <div href="#collapsible-message-accordion-4" data-action="collapse" class="message-header accordion-trigger">
-                                <p>How does the scheme work?</p>
-                            </div>
-                            <div id="collapsible-message-accordion-4" class="message-body is-collapsible" data-parent="accordion-faqs">
-                                <div class="message-body-content">
-                                    OR have proposed to implement a “Demand Led” project for the installation of the new fibre network, in a Demand Led project all of the costs are covered by vouchers from central government (via DCMS) and county councils.</br></br>
-                                    When residents / SMEs pledge their vouchers to the scheme they are commiting to contracting with a broadband service provider to take out a FTTP based service with 2 months of the new fibre network going live. The terms of the voucher scheme can be found <a target="_blank" rel="noopener noreferrer" href="https://gigabitvoucher.culture.gov.uk/wp-content/uploads/2020/09/2020-09-08-GBVS-Beneficiary-Terms-and-Conditions-v6.0.pdf">here</a>.</br></br>
-                                    In an OR “Demand Led” Community Fibre Project (CFP) an outline of the process is:</br></br>
+                        <div class="card mb-5">
+                            <header class="card-header accordion-trigger" href="#faqs-5" data-action="collapse">
+                                <p class="card-header-title">How does the scheme work?</p>
+                                <p class="card-header-icon"><span id="faqs-5-icon" class="fas fa-angle-left"></span></p>
+                            </header>
+                            
+                            <div id="faqs-5" class="is-collapsible" data-parent="accordion-faqs">
+                                <div class="card-content">
+                                    OR have proposed to implement a “Demand Led” project for the installation of the new fibre network. In a Demand Led project, all of the costs are covered by vouchers from central government (via DCMS) and county councils.</br></br>
+                                    When residents/SMEs pledge their vouchers to the scheme, they are committing to contracting with a broadband service provider to take out an FTTP based service within 2 months of the new fibre network going live. The terms of the voucher scheme can be found <a target="_blank" rel="noopener noreferrer" href="https://gigabitvoucher.culture.gov.uk/wp-content/uploads/2020/09/2020-09-08-GBVS-Beneficiary-Terms-and-Conditions-v6.0.pdf">here</a>.</br></br>
+                                    In an OR “Demand Led” Community Fibre Project (CFP), an outline of the process is:</br></br>
                                     <div class="quote">
                                         An enquiry is made to Openreach for a number of properties (<em>September 2020</em>).</br></br>
-                                        Openreach respond with an offer and an outline cost for the project and provide details of the properties that are included in the cost which may be different to the properties initially included in the enquiry (<em>Dec 2020</em>).</br></br>
-                                        If this is of interest OR will request a final cost for the project which is a more detailed costing and typically is not significantly different to the outline cost but it could be.</br></br>
-                                        If the project is still acceptable to those wishing to take part OR will ask DCMS/Hampshire County Council to allocate vouchers to this scheme.
+                                        Openreach respond with an offer and an outline cost for the project and provide details of the properties that are included in the cost, which may be different to the properties initially included in the enquiry (<em>Dec 2020</em>).</br></br>
+                                        If this is of interest, OR will request a final cost for the project, which is a more detailed costing and typically is not significantly different to the outline cost but it could be.</br></br>
+                                        If the project is still acceptable to those wishing to take part, OR will ask DCMS/Hampshire County Council to allocate vouchers to this scheme.
                                         OR then setup a webpage for the project on which residents can “pledge” their vouchers to the scheme. The details for how to do this will be provided in due course.</br></br>
-                                        When sufficient vouchers are pledged to cover the cost the work will begin.</br></br>
+                                        When sufficient vouchers are pledged to cover the cost, the work will begin.</br></br>
                                         Vouchers are paid direct to OR on completion of the installation.</br></br>
-                                        When the network is live residents can place a contract for a new fibre based broadband service from a number of different suppliers, see list below. The voucher scheme requires customers to purchase a service with a minimum speed of 30 Mbps.
+                                        When the network is live, residents can place a contract for a new fibre based broadband service from a number of different suppliers, see list below. The voucher scheme requires customers to purchase a service with a minimum speed of 30 Mbps, but it should be more than twice the speed of the existing connection.
                                     </div>
                                 </div>
                             </div>
-                        </article>
+                        </div>
 
-                        <article class="message is-primary">
-                            <div href="#collapsible-message-accordion-5" data-action="collapse" class="message-header accordion-trigger">
-                                <p>What will fibre broadband cost?</p>
-                            </div>
-                            <div id="collapsible-message-accordion-5" class="message-body is-collapsible" data-parent="accordion-faqs">
-                                <div class="message-body-content">
+                        <div class="card mb-5">
+                            <header class="card-header accordion-trigger" href="#faqs-6" data-action="collapse">
+                                <p class="card-header-title">What will fibre broadband cost?</p>
+                                <p class="card-header-icon"><span id="faqs-6-icon" class="fas fa-angle-left"></span></p>
+                            </header>
+                            
+                            <div id="faqs-6" class="is-collapsible" data-parent="accordion-faqs">
+                                <div class="card-content">
                                     You can find details of fibre broadband service costs <a href="https://www.thinkbroadband.com/packages/fttp-broadband" target="_blank" rel="noopener noreferrer">here</a>.
                                 </div>
                             </div>
-                        </article>
+                        </div>
 
-                        <article class="message is-primary">
-                            <div href="#collapsible-message-accordion-6" data-action="collapse" class="message-header accordion-trigger">
-                                <p>Can I keep my existing ISP?</p>
-                            </div>
-                            <div id="collapsible-message-accordion-6" class="message-body is-collapsible" data-parent="accordion-faqs">
-                                <div class="message-body-content">
-                                    This depends if they support FTTP over Openreach’s Fibre Network. The list is growing and currently includes:-
+                        <div class="card mb-5">
+                            <header class="card-header accordion-trigger" href="#faqs-7" data-action="collapse">
+                                <p class="card-header-title">Can I keep my existing ISP?</p>
+                                <p class="card-header-icon"><span id="faqs-7-icon" class="fas fa-angle-left"></span></p>
+                            </header>
+                            
+                            <div id="faqs-7" class="is-collapsible" data-parent="accordion-faqs">
+                                <div class="card-content">
+                                    This depends if they support FTTP over Openreach’s Fibre Network. The list is growing and currently includes:
                                     <div class="quote mt-3">
                                         <div class="columns is-multiline is-centered is-mobile">
                                             <div class="column is-narrow"><a href="http://www.aa.net.uk/" target="_blank" rel="noopener noreferrer">Andrews & Arnold Ltd</a></div>
                                             <div class="column is-narrow"><a href="http://www.aquiss.net/" target="_blank" rel="noopener noreferrer">Aquiss</a></div>
                                             <div class="column is-narrow"><a href="http://www.bt.com/" target="_blank" rel="noopener noreferrer">BT</a></div>
                                             <div class="column is-narrow"><a href="http://www.cerberusnetworks.co.uk/">Cerberus Networks</a></div>
-                                            <div class="column is-narrow"><a href="http://www.fibre.net/">Fibre.net</a></div>
+                                            <div class="column is-narrow"><a href="http://www.fibre.net/">Fibre net</a></div>
                                             <div class="column is-narrow"><a href="http://www.giga.net.uk/">Giganet</a></div>
                                             <div class="column is-narrow"><a href="http://www.orbital-net/">Orbitalnet</a></div>
                                             <div class="column is-narrow"><a href="http://www.pinemedia.net/">Pine Media</a></div>
@@ -173,18 +216,88 @@
                                     </div>
                                 </div>
                             </div>
-                        </article>
+                        </div>
 
-                        <article class="message is-primary">
-                            <div href="#collapsible-message-accordion-7" data-action="collapse" class="message-header accordion-trigger">
-                                <p>Will it affect my email address?</p>
-                            </div>
-                            <div id="collapsible-message-accordion-7" class="message-body is-collapsible" data-parent="accordion-faqs">
-                                <div class="message-body-content">
-                                    This depends on who you use now for your email service. Email services such as gmail, yahoomail etc are independent of the broadband service provider. If, for example, BT is your service provider and you use BT email addresses, changing service provider might affect your email service – you would need to check with BT (in this instance) what the impact on your email would be. Each broadband provider will have different conditions and therefore it is necessary to check for your own circumstances. 
+                        <div class="card mb-5">
+                            <header class="card-header accordion-trigger" href="#faqs-8" data-action="collapse">
+                                <p class="card-header-title">Will it affect my email address?</p>
+                                <p class="card-header-icon"><span id="faqs-8-icon" class="fas fa-angle-left"></span></p>
+                            </header>
+                            
+                            <div id="faqs-8" class="is-collapsible" data-parent="accordion-faqs">
+                                <div class="card-content">
+                                    This depends on who you use now for your email service. Email services such as Gmail, Yahoo! Mail, etc are independent of the broadband service provider. If, for example, BT is your service provider and you use BT email addresses, changing service provider might affect your email service – in this instance, you would need to check with BT what the impact on your email would be. Each broadband provider will have different conditions and therefore it is necessary to check for your own circumstances. 
                                 </div>
                             </div>
-                        </article>
+                        </div>
+
+                        <div class="card mb-5">
+                            <header class="card-header accordion-trigger" href="#faqs-9" data-action="collapse">
+                                <p class="card-header-title">Will it affect my telephone number?</p>
+                                <p class="card-header-icon"><span id="faqs-9-icon" class="fas fa-angle-left"></span></p>
+                            </header>
+                            
+                            <div id="faqs-9" class="is-collapsible" data-parent="accordion-faqs">
+                                <div class="card-content">
+                                    You will still be able to keep your existing telephone service over the existing copper connection and, in this scenario, your telephone number would not change.</br></br>
+                                    However, depending upon the service you select, it might include a telephony service known as <strong>V</strong>oice <strong>O</strong>ver <strong>IP</strong> (VoIP). If it does, you can choose to cancel your existing telephone service and move the existing number across to the new service. It is similar to keeping your mobile number when changing mobile service suppliers.</br></br>
+                                    There is a third option whereby you can decide to contract with a company that only provides VoIP services rather than obtaining telephony from your broadband supplier.</br></br>
+                                    We would each need to decide for ourselves how we wish to deal with this, though I would hope that once someone has identified the details of the VoIP options, they would share the information with all of us.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-5">
+                            <header class="card-header accordion-trigger" href="#faqs-10" data-action="collapse">
+                                <p class="card-header-title">Will I need to change my router?</p>
+                                <p class="card-header-icon"><span id="faqs-10-icon" class="fas fa-angle-left"></span></p>
+                            </header>
+                            
+                            <div id="faqs-10" class="is-collapsible" data-parent="accordion-faqs">
+                                <div class="card-content">
+                                    This will depend upon whether you have a router supplied by your current ISP or if you have purchased your own, but your new ISP will advise you about this.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-5">
+                            <header class="card-header accordion-trigger" href="#faqs-11" data-action="collapse">
+                                <p class="card-header-title">Will it be more complicated to use than my existing broadband – I’m not very technical?</p>
+                                <p class="card-header-icon"><span id="faqs-11-icon" class="fas fa-angle-left"></span></p>
+                            </header>
+                            
+                            <div id="faqs-11" class="is-collapsible" data-parent="accordion-faqs">
+                                <div class="card-content">
+                                    No. Once the installation is completed, the only change that you should notice is that the service will be faster and more reliable. The new router will require setting up and the wifi name and password configuring. If it is possible to change the router name, it can be simpler to set the new router to the same name and password as the old router and then all wifi connected devices will connect to the new router straight away.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-5">
+                            <header class="card-header accordion-trigger" href="#faqs-12" data-action="collapse">
+                                <p class="card-header-title">Will I need any building work done in my home?</p>
+                                <p class="card-header-icon"><span id="faqs-12-icon" class="fas fa-angle-left"></span></p>
+                            </header>
+                            
+                            <div id="faqs-12" class="is-collapsible" data-parent="accordion-faqs">
+                                <div class="card-content">
+                                    No, there should be no building work necessary within your property. At most, you will need a hole drilled for the new fibre connection and a new box installed on the wall in which the fibre is terminated. Your new fibre router, which will be supplied by your ISP, will connect to the box. It also requires power, so it must be located near an electrical socket. In the future, services like TV and telephony may be delivered using the fibre termination box so think carefully where will be most convenient to install it. The fibre termination box is fixed to the wall to help protect the fibre.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <header class="card-header accordion-trigger" href="#faqs-13" data-action="collapse">
+                                <p class="card-header-title">I work from home, will I be without broadband at any stage during this process?</p>
+                                <p class="card-header-icon"><span id="faqs-13-icon" class="fas fa-angle-left"></span></p>
+                            </header>
+                            
+                            <div id="faqs-13" class="is-collapsible" data-parent="accordion-faqs">
+                                <div class="card-content">
+                                    There are various options to address this: you can either run both your existing service overlapping your new service or, if you are staying with your existing ISP, they will ensure that the service moves without interruption.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -203,14 +316,10 @@
                     <p class="link-block"><a href="/CFP_FAQs.pdf" target="_blank">Openreach Community Fibre Partnerships FAQs</a></p>
                 </div>
             </div>
-                    
-            <!-- </div> -->
         </main>
-
-        <script type="module" crossorigin="anonymous" src="./js/accordion.js"></script>
     </body>
 
     <footer class="footer mt-5">
         <div class="content has-text-centered has-text-grey-light">Richard O'Brien 2021</div>
-      </footer>
+    </footer>
 </html>

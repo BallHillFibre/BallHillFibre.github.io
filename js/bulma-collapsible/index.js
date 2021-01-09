@@ -41,6 +41,8 @@ export default class bulmaCollapsible extends Component {
 			this._siblings = dom.querySelectorAll(this.options.selector, parent) || [];
 		}
 
+		this._icon = document.getElementById(this.element.id + '-icon');
+
 		this._triggers = this.options.container.querySelectorAll(`[data-action="collapse"][href="#${this.element.id}"], [data-action="collapse"][data-target="${this.element.id}"]`) || null;
 		if (this._triggers) {
 			this._triggers.on('click touch', this.onTriggerClick);
@@ -104,6 +106,10 @@ export default class bulmaCollapsible extends Component {
 		this.element.style.height = this.element.scrollHeight + 'px';
 		this.element.classList.add('is-active');
 		this.element.setAttribute('aria-expanded', true);
+		if (this._icon) {
+			this._icon.classList.add("is-active");
+		}
+		
 
 		// Add 'is-active" class to all triggers
 		if (this._triggers) {
@@ -141,6 +147,9 @@ export default class bulmaCollapsible extends Component {
 		this.element.style.height = 0;
 		this.element.classList.remove('is-active');
 		this.element.setAttribute('aria-expanded', false);
+		if (this._icon) {
+			this._icon.classList.remove("is-active");
+		}
 
 		// Remove 'is-active" class from all triggers
 		if (this._triggers) {

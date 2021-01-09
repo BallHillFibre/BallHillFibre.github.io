@@ -4881,7 +4881,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .card-header {
-  background-color: transparent;
+  background-color: #bedae3;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -4896,7 +4896,7 @@ fieldset[disabled] .select select:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #363636;
+  color: #316271;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12748,17 +12748,30 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 1.25em 1.5em;
 }
 
+*::-moz-selection {
+  background-color: #b8deea;
+}
+
+*::selection {
+  background-color: #b8deea;
+}
+
 a {
   -webkit-transition: color 200ms ease;
   transition: color 200ms ease;
+  text-decoration: underline;
+}
+
+a.navbar-item {
+  text-decoration: none;
+}
+
+.card-header .card-header-icon {
+  color: #316271;
 }
 
 .link-block {
   line-height: 2rem;
-}
-
-.link-block a {
-  text-decoration: underline;
 }
 
 .container {
@@ -12834,5 +12847,17 @@ a {
 .quote {
   margin-left: 12.5%;
   margin-right: 12.5%;
+}
+
+.fas {
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
+}
+
+.fas.is-active {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 /*# sourceMappingURL=mystyle.css.map */

@@ -5,6 +5,8 @@ import bulmaCollapsible from './bulma-collapsible/index.js';
 document.addEventListener('DOMContentLoaded', () => {
   bulmaCollapsible.attach('.is-collapsible', {allowMultiple: 'true'});
 
+  console.log("collapsible attached");
+
   const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
   if (navbarBurgers.length > 0) {
     navbarBurgers.forEach( el => {

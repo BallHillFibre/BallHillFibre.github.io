@@ -1,20 +1,35 @@
 $primary: lighten(#1A343C, 15%);
 $link: #4c97ae;
 $link-hover: $primary;
+$card-header-background-color: lighten($primary, 50%);
+$card-header-color: $primary;
 
 @import "node_modules/bulma/bulma.sass";
 @import 'node_modules/@creativebulma/bulma-collapsible/src/sass/index.sass';
 
+*::selection {
+  background-color: saturate($card-header-background-color, 15%);
+}
+
 a {
   transition: color 200ms ease;
+  text-decoration: underline;
+
+  &.navbar-item {
+    text-decoration: none;
+  }
+}
+
+.card-header .card-header-icon {
+  color: $primary;
 }
 
 .link-block {
   line-height: 2rem;
 
-  a {
-    text-decoration: underline;
-  }
+  // a {
+  //   text-decoration: underline;
+  // }
 }
 
 .container {
@@ -82,4 +97,12 @@ a {
   margin-left: 12.5%;
   margin-right: 12.5%;
   // padding: 0 1rem;
+}
+
+.fas {
+  transition: transform 200ms ease;
+
+  &.is-active {
+    transform: rotate(-90deg);
+  }
 }
