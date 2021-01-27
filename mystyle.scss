@@ -20,6 +20,12 @@ a {
   }
 }
 
+.accordion-container {
+  .card:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+
 .card-header .card-header-icon {
   color: $primary;
 }
